@@ -1,4 +1,4 @@
-{% extends "../../templates/home.html.swig" %}
+{% extends "../../templates/default.html.swig" %}
 {% block content %}
 
   <section id="header">
