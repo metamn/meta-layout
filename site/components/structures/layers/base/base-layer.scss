@@ -1,0 +1,11 @@
+@mixin base-layer {
+  @include full-page($position: absolute, $overflow: hidden);
+
+  #sliding-menu {
+    @include sliding-menu;
+  }
+
+  #header-and-footer {
+    @include header-and-footer;
+  }
+}

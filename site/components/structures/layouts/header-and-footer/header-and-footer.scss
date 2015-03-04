@@ -1,0 +1,11 @@
+@mixin header-and-footer {
+  @include full-page($position: absolute, $overflow: hidden);
+
+  #header {
+    @include header;
+  }
+
+  #footer {
+    @include footer;
+  }
+}

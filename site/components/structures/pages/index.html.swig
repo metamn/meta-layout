@@ -1,9 +1,5 @@
 {% extends "../../templates/default.html.swig" %}
-{% block content %}
-
-  <section id="header">
-    <h3>design & code</h3>
-  </section>
+{% block contentxxxxx %}
 
   <section id="content">
     <aside>
@@ -19,8 +15,6 @@
     </article>
   </section>
 
-  <section id="footer">
-    <h3>metamn</h3>
-  </section>
+
 
 {% endblock %}

@@ -1,3 +1,6 @@
 @mixin sliding-menu {
-  
+  @include full-page($position: absolute, $overflow: hidden);
+
+  width: 300px;
+  transform: translateX(-300px);
 }

@@ -1,9 +1,11 @@
-@mixin full-page {
+@mixin full-page($position, $overflow) {
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  position: relative;
   padding: 0;
   margin: 0;
+
+  position: $position;
+  overflow: $overflow;
 }

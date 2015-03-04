@@ -1,5 +1,18 @@
 html {
+  @include fonts;
+  @include full-page($position: relative, $overflow: visible);
+
   body {
-    @include sliding-menu;
+    @include full-page($position: relative, $overflow: visible);
+
+    section, article, header, footer, nav, aside {
+      > h3 {
+        display: none;
+      }
+    }
+
+    #base-layer {
+      @include base-layer;
+    }
   }
 }

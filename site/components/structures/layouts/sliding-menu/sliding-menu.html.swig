@@ -1,4 +1,4 @@
-<nav id="menu">
+<nav id="sliding-menu">
   <h3>Menu</h3>
 
   <ul>
