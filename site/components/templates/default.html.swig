@@ -1,6 +1,6 @@
 {% include "head.html.swig" %}
 
-{% include "../structures/layout/sliding-menu/menu.html.swig" %}
+{% include "../structures/layouts/sliding-menu/menu.html.swig" %}
 {% block content %}{% endblock %}
 
 
