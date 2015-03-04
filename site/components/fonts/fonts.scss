@@ -1,0 +1,14 @@
+@mixin fonts {
+  font-size: 100%;
+  line-height: 1.25;
+
+  h2, h3 {
+    font-size: 100%;
+    line-height: 1.25;
+    font-weight: normal;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+}

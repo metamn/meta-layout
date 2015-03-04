@@ -1,0 +1,28 @@
+html {
+  @include fonts;
+  @include full-page;
+
+  body {
+    @include full-page;
+    @include vertical-grid;
+
+    section {
+      &#content {
+        @include horizontal-grid;
+        @include borders;
+
+        article {
+          h3 {
+            display: none;
+          }
+
+          figure {
+            @include figure;
+            @include placeholder;
+
+          }
+        }
+      }
+    }
+  }
+}
