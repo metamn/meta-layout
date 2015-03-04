@@ -1,7 +1,7 @@
 {% extends "../../templates/default.html.swig" %}
-{% block contentxxxxx %}
+{% block content %}
 
-  <section id="content">
+  <section class="slide">
     <aside>
       <h2>Clean<br>User<br/>Interfaces</h2>
     </aside>
@@ -11,7 +11,6 @@
 
       {% set image = index.images | first %}
       {% include '../../images/atoms/figure.html.swig' %}
-
     </article>
   </section>
 

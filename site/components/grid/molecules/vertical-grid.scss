@@ -1,26 +1,20 @@
 @mixin vertical-grid {
-  // Aligns three elements vertically (#header, $content and #footer)
+  // Aligns three elements vertically (#header, #spacer and #footer)
   // - http://chriswrightdesign.com/experiments/flexbox-adventures/
-  // - it has to be added to the parent container
 
-
-  // display vertically
+  // display them stacked vertically
   display: flex;
   flex-direction: column;
 
-  section {
-    // Content is 2x, header and footer are 1x
-    &#header, &#footer {
-      flex: 1 0 0px;
-    }
+  #header, #footer {
+    flex: 1 0 0px;
 
-    &#content {
-      flex: 2 0 0px;
-    }
-
-    // center their content vertically
+    // center vertically
     display: flex;
     align-items: center;
   }
 
+  .spacer {
+    flex: 2 0 0px;
+  }
 }

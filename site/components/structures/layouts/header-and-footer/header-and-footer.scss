@@ -1,5 +1,6 @@
 @mixin header-and-footer {
   @include full-page($position: absolute, $overflow: hidden);
+  @include vertical-grid;
 
   #header {
     @include header;
