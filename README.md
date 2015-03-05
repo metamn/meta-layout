@@ -39,9 +39,9 @@ When you start with a blank page the first thing you do is to write HTML. Add so
 
 ##### 2. Pages and Templates
 
-Every website starts with a page. Without page there is no website. So Page will be the first entry in our Structure.
+Websites starts with a page. Without page there is no website. Let Page will be the first entry in our Structure.
 
-Unless you are creating a Single Page Web Application your site will have probably more then one page. These pages share at least one common part: the <code>head</code> section. So we have to introduce Templates.
+Unless you are creating a Single Page Web Application your site will have probably more then one page. These pages share at least one common part: the <code>head</code> section. Let Templates manage how content flows through different pages.
 
 
 #### 3. Elements
