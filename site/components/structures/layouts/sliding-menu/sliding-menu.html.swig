@@ -1,10 +1,5 @@
-<nav id="sliding-menu">
-  <h3>Menu</h3>
+<section id="sliding-menu">
+  <h3>Sliding menu</h3>
 
-  <ul>
-    <li>design</li>
-    <li>code</li>
-    <li>about</li>
-    <li>contact</li>
-  </ul>
+  {% include '../../sections/menu/menu.html.swig' %}
 </nav>
