@@ -20,7 +20,7 @@ Every company does the composing differently:
 As workflows it seems components also change from project to project. They are part of a culture not of a standard.
 
 
-#### The current approach
+#### The Meta approach
 
 I have been created 10+ projects built on Atomic design principles. This methodology was a huge step forward from the structure I've been used before. But turned out not to be the holy grail.
 
@@ -35,6 +35,12 @@ If you've built websites top-down (add a blank page, then a header, then a navig
 ##### 1. Structure and Design
 
 When you start with a blank page the first thing you do is to write HTML. Add some content and structure. Then later add some styling like fonts and colors. Every website has a structure and a design layer. Let put them as the highest level entries in our folder structure.
+
+<pre>
+└── components
+    ├── design
+    └── structures
+</pre>
 
 
 ##### 2. Pages and Templates
