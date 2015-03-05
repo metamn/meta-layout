@@ -285,10 +285,9 @@ gulp.task('html_site', function() {
   return gulp.src(paths.html_src)
     .pipe(plumber({errorHandler: onError}))
     .pipe(rename(function(path) {
-      // rename about.html > about/index.html
-      if (path.basename != 'index') {
-        path.dirname = path.dirname + '/' + path.basename;
-        path.basename = 'index';
+      // rename home/index.html > index.html
+      if (path.dirname == 'home') {
+        path.dirname = '';
       }
     }))
     .pipe(minifyHTML())
