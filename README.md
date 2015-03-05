@@ -47,7 +47,70 @@ When you start with a blank page the first thing you do is to write HTML. Add so
 
 Websites starts with a page. Without page there is no website. Let Page will be the first entry in our Structure.
 
-Unless you are creating a Single Page Web Application your site will have probably more then one page. These pages share at least one common part: the <code>head</code> section. Let Templates manage how content flows through different pages.
+Unless you are creating a Single Page Web Application your site will have probably more then one pages. These pages share at least one common part: the <code>head</code> section. Templates are to manage how shared content flows through different pages.
+
+<pre>
+└── components
+    ├── design
+    └── structures
+        ├── pages
+        └── templates
+</pre>
 
 
-#### 3. Elements
+##### 3. Elements
+
+You are probably writing semantic HTML5 code using <code>section</code>, <code>article</code>, <code>nav</code> instead of plain old <code>div</code>.
+
+Let's have a folder for all of them in a common place: Elements.
+
+<pre>
+└── components
+    ├── design
+    └── structures
+        ├── elements
+        │   ├── articles
+        │   ├── figures
+        │   ├── footers
+        │   ├── headers
+        │   ├── navigations
+        │   └── sections
+        │   └── ...
+        ├── pages
+        └── templates
+</pre>
+
+This way when you see a <code>figure</code> in the HTML code you'll immediately know where to look for the associated code.
+
+
+##### 4. Layouts
+
+Once we have all set up for representing all elements collected into pages flowing through templates what's left is to lay out a proper structure, or layout for our site.
+
+Maybe we will have a full page layout, a sliding menu, a responsive grid, or different layers stacked upon. All the code positioning the elements should be handled by this folder.
+
+This way we have separated two concerns: Elements describe the look, Layouts describe how they are arranged.
+
+Now our <code>component</code> folder should look like this:
+
+<pre>
+├── design
+│   ├── decorations
+│   └── fonts
+└── structures
+    ├── elements
+    │   ├── articles
+    │   ├── figures
+    │   ├── footers
+    │   ├── headers
+    │   ├── navigations
+    │   └── sections
+    ├── layouts
+    │   ├── full-page
+    │   ├── grid
+    │   ├── header-and-footer
+    │   ├── layers
+    │   └── sliding-menu
+    ├── pages
+    └── templates
+</pre>
