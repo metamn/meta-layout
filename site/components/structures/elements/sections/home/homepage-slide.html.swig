@@ -1,4 +1,4 @@
-<section id="{{ section.id }}" class="slide">
+<section id="{{ section.id }}" class="homepage-slide">
   <h3>{{ section.title }}</h3>
 
   <aside>
@@ -8,7 +8,7 @@
   </aside>
 
   {% if section.id %}
-    {% set article = '../../articles/home/' + section.id + '.html.swig' %}
+    {% set article = '../../articles/home/' + section.id + '/' +  section.id + '.html.swig' %}
     {% include article %}
   {% endif %}
 </section>

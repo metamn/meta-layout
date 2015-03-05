@@ -1,5 +1,5 @@
-<nav id="menu">
-  <h3>Menu</h3>
+<nav id="main-menu">
+  <h3>Main menu</h3>
 
   <ul>
     <li>design</li>
