@@ -24,15 +24,15 @@ As workflows&mdash;it seems&mdash;components also change from project to project
 
 I have been created 10+ projects built on Atomic design principles. This methodology was a huge step forward from the structure I've been used before. But turned out not to be the holy grail.
 
-First of all the main folders and concepts (Atoms, Molecules, Organisms, Templates and Pages) do not cope well. It's all clear what goes into Atoms, Templates and Pages but the remaining two levels, Molecules and Organisms, hold not enough abstraction space for many components building rest of the site.
+First of all the main folders and concepts (Atoms, Molecules, Organisms, Templates and Pages) do not cope well. It's all clear what goes into Atoms, Templates and Pages but the remaining two levels, Molecules and Organisms, hold not enough abstraction space for many of the components building the rest of the site.
 
-Second, it is hard to make a connection between headers, footers, articles, buttons, lists etc. and atoms, molecules and organisms. In the best case you can remember the logic but you can't expect others to find out in which atomic folder the secondary footer of the site should belong.
+Second, it is hard to make a connection between headers, footers, articles, buttons, lists etc. and atoms, molecules and organisms. In the best case you can remember the logic but you can't expect other developers to find out in which atomic folder the secondary footer of the site should belong.
 
 After many cries I've come up with a more natural solution.
-If you've built websites top-down (add a blank page, then a header, then a navigation, then some content, then add styling) instead of bottom-up (import a component library, framework then chop parts not required for this current site) then you'll maybe find this method intuitive.
+If you've built websites bottom up&mdash;add a blank page, then a header, then a navigation, then some content, then add styling&mdash;instead of top down&mdash;import a component library or framework then chop parts not required for this current site&mdash;then you'll find this method intuitive.
 
 
-##### 1. Structure and Design
+#### 1. Structure and Design
 
 When you start with a blank page the first thing you do is to write HTML. Add some content and structure. Then later add some styling like fonts and colors. Every website has a structure and a design layer. Let put them as the highest level entries in our folder structure.
 
@@ -43,11 +43,11 @@ When you start with a blank page the first thing you do is to write HTML. Add so
 </pre>
 
 
-##### 2. Pages and Templates
+#### 2. Pages and Templates
 
 Websites starts with a page. Without page there is no website. Let Page will be the first entry in our Structure.
 
-Unless you are creating a Single Page Web Application your site will have probably more then one pages. These pages share at least one common part: the <code>head</code> section. Templates are to manage how shared content flows through different pages.
+Unless you are creating a single page web application your site will have probably more then one pages. These pages share at least one common part: the <code>head</code> section. Templates are here to manage how shared content flows through different pages.
 
 <pre>
 └── components
@@ -58,11 +58,11 @@ Unless you are creating a Single Page Web Application your site will have probab
 </pre>
 
 
-##### 3. Elements
+#### 3. Elements
 
 You are probably writing semantic HTML5 code using <code>section</code>, <code>article</code>, <code>nav</code> instead of plain old <code>div</code>.
 
-Let's have a folder for all of them in a common place: Elements.
+Let's have a folder to collect all these elements.
 
 <pre>
 └── components
@@ -83,11 +83,11 @@ Let's have a folder for all of them in a common place: Elements.
 This way when you see a <code>figure</code> in the HTML code you'll immediately know where to look for the associated code.
 
 
-##### 4. Layouts
+#### 4. Layouts
 
-Once we have all set up for representing all elements collected into pages flowing through templates what's left is to lay out a proper structure, or layout for our site.
+Now we have all elements collected into pages flowing through templates. What's left is to arrange the elements.
 
-Maybe we will have a full page layout, a sliding menu, a responsive grid, or different layers stacked upon each other. All the code positioning the elements should be handled by this folder.
+Maybe we will have a full page layout, a sliding menu, a responsive grid, or different layers stacked upon each other. All the code positioning the elements should be handled by the Layout folder.
 
 This way we have separated two concerns: Elements describe the look, Layouts describe how they are arranged.
 
