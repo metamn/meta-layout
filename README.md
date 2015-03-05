@@ -74,7 +74,7 @@ Let's have a folder for all of them in a common place: Elements.
         │   ├── footers
         │   ├── headers
         │   ├── navigations
-        │   └── sections
+        │   ├── sections
         │   └── ...
         ├── pages
         └── templates
@@ -87,7 +87,7 @@ This way when you see a <code>figure</code> in the HTML code you'll immediately 
 
 Once we have all set up for representing all elements collected into pages flowing through templates what's left is to lay out a proper structure, or layout for our site.
 
-Maybe we will have a full page layout, a sliding menu, a responsive grid, or different layers stacked upon. All the code positioning the elements should be handled by this folder.
+Maybe we will have a full page layout, a sliding menu, a responsive grid, or different layers stacked upon each other. All the code positioning the elements should be handled by this folder.
 
 This way we have separated two concerns: Elements describe the look, Layouts describe how they are arranged.
 
