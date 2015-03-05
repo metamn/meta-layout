@@ -1,0 +1,6 @@
+@mixin home-article-ui {
+  figure {
+    @include figure;
+    @include placeholder;
+  }
+}

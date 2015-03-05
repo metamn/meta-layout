@@ -1,0 +1,9 @@
+html {
+  body {
+    #content-layer {
+      .slide {
+        @include homepage-slide;
+      }
+    }
+  }
+}

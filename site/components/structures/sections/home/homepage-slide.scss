@@ -1,0 +1,6 @@
+@mixin homepage-slide {
+
+  &#ui {
+    @include home-article-ui;
+  }
+}

@@ -1,15 +1,11 @@
 html {
   @include fonts;
+  @include semantic-html5;
+  
   @include full-page($position: relative, $overflow: visible);
 
   body {
     @include full-page($position: relative, $overflow: visible);
-
-    section, article, header, footer, nav, aside {
-      > h3 {
-        display: none;
-      }
-    }
 
     #base-layer {
       @include base-layer;
