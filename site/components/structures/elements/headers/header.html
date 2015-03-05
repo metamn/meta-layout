@@ -1,3 +1,3 @@
 <header id="header">
-  <h3>design & code</h3>
+  <h4>design & code</h4>
 </header>
