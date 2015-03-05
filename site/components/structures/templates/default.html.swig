@@ -1,6 +1,6 @@
 {% include "head.html.swig" %}
 
-{% include "../structures/layers/base/base-layer.html.swig" %}
+{% include "../layouts/layers/base/base-layer.html.swig" %}
 
 <!-- content layer cannot be included like base layer because {% block %} will be not passed to it -->
 <section id="content-layer">
