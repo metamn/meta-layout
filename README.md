@@ -17,7 +17,7 @@ Every company does the composing differently:
 
 - Pattern Lab, Atomic Design: http://demo.patternlab.io/ using Atoms, Molecules, Organisms, Templates and Pages
 
-As workflows it seems components also change from project to project. They are part of a culture not of a standard.
+As workflows&mdash;it seems&mdash;components also change from project to project. They are part of a culture not of a standard.
 
 
 #### The Meta approach
