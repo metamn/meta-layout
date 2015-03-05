@@ -24,12 +24,12 @@ As workflows&mdash;it seems&mdash;components also change from project to project
 
 I have been created 10+ projects built on Atomic design principles. This methodology was a huge step forward from the structure I've been used before. But turned out not to be the holy grail.
 
-First of all the main folders and concepts (Atoms, Molecules, Organisms, Templates and Pages) do not cope well. It's all clear what goes into Atoms, Templates and Pages but the remaining two levels, Molecules and Organisms, hold not enough abstraction for the rest of the site.
+First of all the main folders and concepts (Atoms, Molecules, Organisms, Templates and Pages) do not cope well. It's all clear what goes into Atoms, Templates and Pages but the remaining two levels, Molecules and Organisms, hold not enough abstraction space for many components building rest of the site.
 
 Second, it is hard to make a connection between headers, footers, articles, buttons, lists etc. and atoms, molecules and organisms. In the best case you can remember the logic but you can't expect others to find out in which atomic folder the secondary footer of the site should belong.
 
 After many cries I've come up with a more natural solution.
-If you've built websites top-down (add a blank page, then a header, then a navigation, then some content, then add styling) instead of bottom-up (import a component library / framework then chop parts not required for this current site) then you'll maybe find this method intuitive.
+If you've built websites top-down (add a blank page, then a header, then a navigation, then some content, then add styling) instead of bottom-up (import a component library, framework then chop parts not required for this current site) then you'll maybe find this method intuitive.
 
 
 ##### 1. Structure and Design
