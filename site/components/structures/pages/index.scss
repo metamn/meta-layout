@@ -1,0 +1,12 @@
+html {
+  body {
+    #content-layer {
+      .slide {
+        figure {
+          @include figure;
+          @include placeholder;
+        }
+      }
+    }
+  }
+}
