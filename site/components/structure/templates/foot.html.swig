@@ -1,4 +1,8 @@
 <script src="{{ site.url }}assets/scripts/site.min.js"></script>
 
+<script>
+Reveal.initialize();
+</script>
+
 </body>
 </html>
