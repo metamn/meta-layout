@@ -5,8 +5,16 @@
   display: flex;
   align-items: center;
 
-  
+
   &#ui {
     @include home-ui;
+  }
+
+  &#interactions {
+    transform: translateY(100%);
+  }
+
+  &#ux {
+    transform: translateY(200%);
   }
 }
