@@ -7,7 +7,7 @@ title: Home
 
 
   {% for section in index.sections %}
-    {% include '../../elements/sections/home/homepage-slide.html.swig' %}
+    {% include '../../elements/sections/home/home-slide.html.swig' %}
   {% endfor %}
 
 
