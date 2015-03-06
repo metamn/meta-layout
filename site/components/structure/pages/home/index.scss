@@ -2,13 +2,14 @@ html.home {
   @include fonts;
   @include semantic-html5;
 
-  @include full-page($position: relative, $overflow: auto);
+  @include full-page($position: relative, $overflow: visible);
 
   body {
-    @include full-page($position: relative, $overflow: auto);
+    @include full-page($position: relative, $overflow: visible);
 
     #base-layer {
       @include base-layer;
+      z-index: 2;
     }
 
     #content-layer {

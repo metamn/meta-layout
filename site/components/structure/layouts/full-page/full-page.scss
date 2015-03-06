@@ -8,8 +8,4 @@
 
   position: $position;
   overflow: $overflow;
-
-  @if (position == fixed) {
-    -webkit-transform: translateZ(0);
-  }
 }
