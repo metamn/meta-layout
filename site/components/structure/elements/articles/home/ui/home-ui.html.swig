@@ -1,5 +1,5 @@
 <article>
-  <h3>{{ section.title }}</h3>
+  <h3>Slide content</h3>
 
   {% set image = section.image %}
   {% include '../../../figures/figure.html.swig' %}
