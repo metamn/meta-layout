@@ -1,13 +1,7 @@
 @mixin content-layer {
   @include full-page($position: absolute, $overflow: hidden);
 
-  .homepage-slide {
-    @include full-page($position: absolute, $overflow: hidden);
-    @include horizontal-grid;
-
-    display: flex;
-    align-items: center;
-
+  .home-slide {
     @include home-slide;
   }
 }

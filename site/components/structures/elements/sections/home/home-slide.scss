@@ -1,4 +1,11 @@
 @mixin home-slide {
+  @include full-page($position: absolute, $overflow: hidden);
+  @include horizontal-grid;
+
+  display: flex;
+  align-items: center;
+
+  
   &#ui {
     @include home-ui;
   }
