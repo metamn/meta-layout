@@ -1,7 +1,7 @@
 @mixin sliding-menu-animation($desktop, $mobile) {
 
   #sliding-menu, #header-and-footer {
-    @include prepare-animation;
+    @include bezier-animation;
   }
 
   &.view-change {

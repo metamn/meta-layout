@@ -1,5 +1,6 @@
 @mixin sliding-menu($desktop, $mobile) {
   @include full-page($position: absolute, $overflow: hidden);
+  @include vertical-grid;
 
   width: $desktop;
   transform: translateX(-$desktop);

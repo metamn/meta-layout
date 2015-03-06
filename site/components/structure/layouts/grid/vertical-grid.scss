@@ -1,12 +1,16 @@
 @mixin vertical-grid {
-  // Aligns three elements vertically (#header, #spacer and #footer)
+  // Aligns three elements vertically
   // - http://chriswrightdesign.com/experiments/flexbox-adventures/
 
   // display them stacked vertically
   display: flex;
   flex-direction: column;
 
-  #header, #footer {
+
+  // Usually the container contains a <h3>Container title</h3>
+  // - so nth-child() index will start from 2 instead of 1
+
+  > :nth-child(2), > :nth-child(4) {
     flex: 1 0 0px;
 
     // center vertically
@@ -14,7 +18,7 @@
     align-items: center;
   }
 
-  .spacer {
+  > :nth-child(3) {
     flex: 2 0 0px;
   }
 }
