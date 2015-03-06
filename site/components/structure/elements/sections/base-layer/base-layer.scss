@@ -1,9 +1,13 @@
 @mixin base-layer {
   @include full-page($position: absolute, $overflow: hidden);
-  @include sliding-menu-animation;
+
+  $sliding-menu-width: 300px;
+  $sliding-menu-width-mobile: 160px;
+
+  @include sliding-menu-animation($sliding-menu-width, $sliding-menu-width-mobile);
 
   #sliding-menu {
-    @include sliding-menu;
+    @include sliding-menu($sliding-menu-width, $sliding-menu-width-mobile);
   }
 
   #header-and-footer {

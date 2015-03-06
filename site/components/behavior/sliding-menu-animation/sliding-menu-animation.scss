@@ -1,4 +1,5 @@
-@mixin sliding-menu-animation {
+@mixin sliding-menu-animation($desktop, $mobile) {
+
   #sliding-menu, #header-and-footer {
     @include prepare-animation;
   }
@@ -9,7 +10,11 @@
     }
 
     #header-and-footer {
-      transform: translateX(300px);
+      transform: translateX($desktop);
+
+      @include mobile {
+        transform: translateX($mobile);
+      }
     }
   }
 }

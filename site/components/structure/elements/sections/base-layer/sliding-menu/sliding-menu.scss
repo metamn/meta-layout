@@ -1,6 +1,11 @@
-@mixin sliding-menu {
+@mixin sliding-menu($desktop, $mobile) {
   @include full-page($position: absolute, $overflow: hidden);
 
-  width: 300px;
-  transform: translateX(-300px);
+  width: $desktop;
+  transform: translateX(-$desktop);
+
+  @include mobile {
+    width: $mobile;
+    transform: translateX(-$mobile);
+  }
 }
