@@ -6,15 +6,30 @@
   align-items: center;
 
 
+  article {
+    figure {
+      @include figure;
+      @include placeholder;
+
+      width: 70%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+
+
   &#ui {
     @include home-ui;
   }
 
   &#interactions {
+    @include home-interactions;
     transform: translateY(100%);
   }
 
   &#ux {
+    @include home-ux;
     transform: translateY(200%);
   }
 }

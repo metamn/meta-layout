@@ -1,5 +1,5 @@
 @mixin content-layer {
-  @include full-page($position: absolute, $overflow: hidden);
+  @include full-page($position: absolute, $overflow: visible);
 
   .home-slide {
     @include home-slide;
