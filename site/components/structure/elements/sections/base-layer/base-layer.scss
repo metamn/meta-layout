@@ -1,6 +1,8 @@
 @mixin base-layer {
   @include full-page($position: fixed, $overflow: hidden);
 
+  background: transparent;
+
   $sliding-menu-width: 300px;
   $sliding-menu-width-mobile: 160px;
 
