@@ -1,5 +1,5 @@
 @mixin home-slide {
-  //@include full-page($position: absolute, $overflow: hidden);
+  @include full-page($position: absolute, $overflow: hidden);
   @include horizontal-grid;
 
   display: flex;
