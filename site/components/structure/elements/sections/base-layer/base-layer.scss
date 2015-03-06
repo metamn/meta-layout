@@ -1,5 +1,6 @@
 @mixin base-layer {
   @include full-page($position: absolute, $overflow: hidden);
+  @include sliding-menu-animation;
 
   #sliding-menu {
     @include sliding-menu;

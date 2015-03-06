@@ -1,0 +1,15 @@
+@mixin sliding-menu-animation {
+  #sliding-menu, #header-and-footer {
+    @include prepare-animation;
+  }
+
+  &.view-change {
+    #sliding-menu {
+      transform: translateX(0);
+    }
+
+    #header-and-footer {
+      transform: translateX(300px);
+    }
+  }
+}
