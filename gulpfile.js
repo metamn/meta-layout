@@ -230,6 +230,10 @@ gulp.task('scripts', function() {
 
 
 
+
+
+
+
 // SCSS
 // - import all scss files into site.scss. Folders will be imported in alphabetical order
 // - compile site.scss with autoprefixer
@@ -254,6 +258,9 @@ gulp.task('scss', function(){
   _scss('site/' + paths.scss_src, paths.scss_dest, paths.html_src);
   //_scss('styleguide/' + paths.scss_src, paths.styleguide_scss_dest, paths.styleguide_html_src);
 });
+
+
+
 
 
 
